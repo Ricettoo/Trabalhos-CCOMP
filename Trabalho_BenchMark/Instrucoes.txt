@@ -1,0 +1,13 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/ ***Instruções para fazer o benchmark rodar corretamente***                                    /
+/                                                                                               /
+/ *Sistema Operacional Windows (Uso da biblioteca Windows,Que faz uso de uma funcao essencial)  /
+/ *Compilador C                                                                                 /
+/                                                                                               /
+/                                                                                               /
+/ -O Codigo já vem pre-programado para rodar automaticamente,mas para trocar os valores das     /
+/  variaveis voce pode mudar o TTestes e QtdTeste                                               /
+/ -O usuário apenas deve Inserir 1 ou 2 para escolher qual benchmark quer usar (CPU/MEMÓRIA)    /
+/                                                                                               /
+/                                                                                               /
+/////////////////////////////////////////////////////////////////////////////////////////////////
