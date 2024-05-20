@@ -1,0 +1,40 @@
+Intrucoes para fazer o AFD funcionar corretamente
+
+-Definir o estado inicial(int)
+-Definir quantidade e os estados finais(int)
+-Definir os estados e simbolos do alfabeto(char)
+-Definir e preencher a tabela de transicao(char)
+-Definir a palavra para ser testada(ex:cadadaba)
+
+Modelo pronto com todos os valores para o imput:
+
+1
+4
+1
+4
+4
+
+a
+b
+c
+d
+
+-1
+-1
+-1
+2
+-1
+2
+3
+-1
+2
+4
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+
+cadadaba
