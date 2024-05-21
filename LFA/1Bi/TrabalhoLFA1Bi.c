@@ -7,9 +7,9 @@
 int Verificar(int EstInic, int QtdEstadoFinal, int* EstadosFinais, int QtdSimb, char* Simb, int Transicao[50][50], char* PalavraTeste) {
     int EstAtual = EstInic;
 
+    // Encontra o índice do símbolo no alfabeto
     for (int i = 0; i < strlen(PalavraTeste); i++) {
         int simbIndex = -1;
-        // Encontra o índice do símbolo no alfabeto
         for (int j = 0; j < QtdSimb; j++) {
             if (PalavraTeste[i] == Simb[j]) {
                 simbIndex = j;
@@ -89,7 +89,7 @@ int main() {
     }
 
 
-
+    //repeticao para testar letras + de uma vez
     while (true){
      
         printf("\nDigite a palavra a ser testada: ");
