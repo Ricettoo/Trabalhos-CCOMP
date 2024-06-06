@@ -10,7 +10,7 @@ int Verificar(int EstInic, int QtdEstadoFinal, int* EstadosFinais, int QtdSimb, 
     // Encontra o índice do símbolo no alfabeto
     for (int i = 0; i < strlen(PalavraTeste); i++) {
         int simbIndex = -1;
-        for (int j = 0; j < QtdSimb; j++) {
+        for (int j = 0; j < QtdSimb; j++) { 
             if (PalavraTeste[i] == Simb[j]) {
                 simbIndex = j;
                 break;
