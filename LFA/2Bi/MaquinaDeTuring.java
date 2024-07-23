@@ -14,6 +14,7 @@ class Transicao {
 
 public class MaquinaDeTuring {
 
+    // Metodo para exibir a tabela de transicoes
     static void TabelaDeTransicao(int qtdLetras, char[] alfabeto, int qtdEstados, Transicao[][] tabela) {
         System.out.println("=====Tabela de transicao=====");
         System.out.print("   ");
@@ -25,12 +26,13 @@ public class MaquinaDeTuring {
         for (int i = 0; i < qtdEstados; i++) {
             System.out.printf("%02d ", i);
             for (int j = 0; j < qtdLetras; j++) {
-                System.out.printf("%d,%d ",(i+1),(j+1));
+                System.out.printf("%d,%d ", (i + 1), (j + 1));
             }
             System.out.println();
         }
     }
 
+    // Metodo para encontrar o indice de um caractere no alfabeto
     static int buscarIndice(char c, char[] alfabeto, int qtdLetras) {
         for (int i = 0; i < qtdLetras; i++) {
             if (alfabeto[i] == c) {
@@ -40,6 +42,7 @@ public class MaquinaDeTuring {
         return -1; // Caractere nao encontrado
     }
 
+    // Metodo para verificar se um estado e final
     static boolean estadoFinal(int estado, int[] estadosFinais, int qtdEstadosFinais) {
         for (int i = 0; i < qtdEstadosFinais; i++) {
             if (estado == estadosFinais[i]) {
@@ -60,6 +63,7 @@ public class MaquinaDeTuring {
         int qtdEstados, estadoInicial, qtdEstadosFinais;
         int[] estadosFinais = new int[10];
 
+        // Entrada de dados
         System.out.print("Digite a quantidade de letras do alfabeto: ");
         qtdLetras = scanner.nextInt();
         scanner.nextLine();
@@ -107,6 +111,7 @@ public class MaquinaDeTuring {
         System.arraycopy(alfabeto, 0, alfabetoTotal, 0, qtdLetras);
         System.arraycopy(alfabetoFamiliar, 0, alfabetoTotal, qtdLetras, qtdLetrasFamiliar);
 
+        // Inicializa a tabela de transicoes
         Transicao[][] tabela = new Transicao[10][24];
         for (int i = 0; i < qtdEstados; i++) {
             for (int j = 0; j < qtdLetrasTotal; j++) {
@@ -116,6 +121,7 @@ public class MaquinaDeTuring {
 
         TabelaDeTransicao(qtdLetrasTotal, alfabetoTotal, qtdEstados, tabela);
 
+        // Entrada das transicoes
         System.out.println("obs: Digite -1 para quando nao houver transicao\nDigite as transicoes: ");
 
         for (int i = 0; i < qtdEstados; i++) {
@@ -174,6 +180,6 @@ public class MaquinaDeTuring {
             }
         }
 
-        System.out.println("Resultado: "+ marcadorInicio + new String(fita));
+        System.out.println("Resultado: " + marcadorInicio + new String(fita));
     }
 }
