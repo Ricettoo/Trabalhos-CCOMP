@@ -53,7 +53,8 @@ public class MaquinaDeTuring {
         Scanner scanner = new Scanner(System.in);
 
         int qtdLetras, qtdLetrasFamiliar;
-        char[] alfabeto = new char[24], alfabetoFamiliar = new char[24];
+        char[] alfabeto = new char[24];
+        char[] alfabetoFamiliar = new char[24];
         String palavra;
         char marcadorInicio, simboloVazio;
         int qtdEstados, estadoInicial, qtdEstadosFinais;
@@ -61,7 +62,7 @@ public class MaquinaDeTuring {
 
         System.out.print("Digite a quantidade de letras do alfabeto: ");
         qtdLetras = scanner.nextInt();
-        scanner.nextLine(); // Limpa o '\n' do scan
+        scanner.nextLine();
 
         for (int i = 0; i < qtdLetras; i++) {
             System.out.print("Digite a " + (i + 1) + "a letra: ");
