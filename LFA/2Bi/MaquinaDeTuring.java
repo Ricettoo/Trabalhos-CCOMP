@@ -41,7 +41,6 @@ public class MaquinaDeTuring {
         }
         return -1; // Caractere nao encontrado
     }
-
     // Metodo para verificar se um estado e final
     static boolean estadoFinal(int estado, int[] estadosFinais, int qtdEstadosFinais) {
         for (int i = 0; i < qtdEstadosFinais; i++) {
@@ -108,7 +107,6 @@ public class MaquinaDeTuring {
 
         int qtdLetrasTotal = qtdLetras + qtdLetrasFamiliar;
         char[] alfabetoTotal = new char[24];
-        System.arraycopy(alfabeto, 0, alfabetoTotal, 0, qtdLetras);
         System.arraycopy(alfabetoFamiliar, 0, alfabetoTotal, qtdLetras, qtdLetrasFamiliar);
 
         // Inicializa a tabela de transicoes
