@@ -2,13 +2,13 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class PainelBasicoLeiDeGauss extends JFrame {
+public class LeiDeGauss extends JFrame {
     private JTextField raioField;
     private JTextField densidadeField;
     private JTextField distanciaField;
     private JLabel resultadoLabel;
 
-    public PainelBasicoLeiDeGauss() {
+    public LeiDeGauss() {
         setTitle("Lei de Gauss - Campo Elétrico");
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -64,7 +64,7 @@ public class PainelBasicoLeiDeGauss extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            new PainelBasicoLeiDeGauss().setVisible(true);
+            new LeiDeGauss().setVisible(true);
         });
     }
 }
