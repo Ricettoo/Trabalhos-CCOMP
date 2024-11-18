@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
+  //Trabalho de Ordenaçao
+  //Gabriel Ricetto Da Rocha
+
 int comparacao = 0;
 int movimento = 0;
 
